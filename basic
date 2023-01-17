@@ -1,0 +1,13 @@
+CREATE DATABASE employess;
+SELECT DATABASE();
+use employess;
+CREATE TABLE employe(
+    em_id int AUTO_INCREMENT not null,
+    lname varchar(20) not null,
+    fname varchar(20) not null,
+    mname varchar(20),
+    age int not null,
+    c_status varchar(20) not null DEFAULT 'employ',
+    PRIMARY KEY(em_id)
+);
+DESC employe;
