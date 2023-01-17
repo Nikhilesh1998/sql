@@ -1,0 +1,58 @@
+CREATE TABLE cat(
+    cat_id int not null AUTO_INCREMENT,
+    name varchar(100),
+    breed varchar(100),
+    age int,
+    PRIMARY key(cat_id)
+);
+
+CREATE DATABASE helloWorld;
+
+drop DATABASE helloWorld;
+USE helloWorld;
+
+INSERT INTO cat(name,breed,age)
+VALUES ('ringo','german',13),
+       ('Alexa','labra',15),
+       ('asad','kathva',75),
+       ('lol','pol',7);
+       SELECT*FROM cat;
+       
+       
+select * from cats;
+
+       
+select name , age from cat;
+
+select*from cat WHERE age =15;
+
+select name , age from cat where age = 15;
+
+select name , age from cat where name = 'asad';
+select name , age from cat where age >=7;
+select name , age from cat where age >=15;
+
+select name , age from cat where breed = 'labra';
+select name , breed from cat;
+
+select name , breed from cat  where cat_id=age;
+
+#alias
+select name as 'cat name',breed as 'kitty breed' from cat  ;
+
+#update 
+update cat set breed = 'tabby' where breed = 'labra';
+
+update cat set name = 'chutiya' where name = 'asad'; 
+
+update cat set age = 9 where name = 'ringo';
+
+#challenges 
+update cat set name = 'roast' where name = 'ringo';
+
+#delete 
+delete from cat where name = 'chutiya';
+delete from cat;
+
+delete from cat where age = 7;
+delete from cat;
